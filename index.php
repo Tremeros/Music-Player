@@ -8,6 +8,15 @@
 </head>
 <body>
     <h1>This is the music player</h1>
+
+    <?php 
+    $server = $_SERVER;
+
+    foreach($server as $key => $value) {
+        echo '<hr>';
+        echo $key.': '.$value;
+    }
+    ?>
 </body>
 </html>
 
