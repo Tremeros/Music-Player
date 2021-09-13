@@ -1,10 +1,12 @@
 <?php 
+  include("includes/classes/Account.php");
 
-$DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
-if(isset($_POST['loginButton'])) {
-  echo $_POST['loginUserame'];
-}
+  $account = new Account();
 
+  
+
+  include("includes/handlers/register-handlesr.php");
+  include("includes/handlers/login-handlesr.php"); 
 ?>
 
 <!DOCTYPE html>
@@ -16,9 +18,10 @@ if(isset($_POST['loginButton'])) {
     <title>Mplayer</title>
 </head>
 <body>
+  <h2>Mplayer</h2>
     <div id="auth_container">
-      <?php include($DOCUMENT_ROOT. '/mplayer/loginForm.php'); ?>
-      <?php include($DOCUMENT_ROOT. '/mplayer/registerForm.php'); ?>       
+      <?php include("loginForm.php"); ?>
+      <?php include("registerForm.php"); ?>       
     </div>
 </body>
 </html>
