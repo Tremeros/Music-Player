@@ -5,8 +5,8 @@
 
   
 
-  include("includes/handlers/register-handlesr.php");
-  include("includes/handlers/login-handlesr.php"); 
+  include("includes/handlers/register-handler.php");
+  include("includes/handlers/login-handler.php"); 
 ?>
 
 <!DOCTYPE html>
