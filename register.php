@@ -1,7 +1,10 @@
 <?php 
+  include("includes/config.php");
   include("includes/classes/Account.php");
+  include("includes/classes/Constans.php");
 
-  $account = new Account();
+  $account = new Account($datatabseConnection);
+
 
   
 
